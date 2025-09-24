@@ -33,7 +33,7 @@
       <h1 class="text-5xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg tracking-wide animate-pulse">
         Create New Student
       </h1>
-
+<br>
     <section>
       <form action="<?=site_url('students/create');?>" method="POST" class="space-y-5" novalidate>
         
