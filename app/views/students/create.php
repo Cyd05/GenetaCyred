@@ -5,35 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Create New Student</title>
   <script src="https://cdn.tailwindcss.com"></script>
- <style>
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    /* Gradient overlay na may dark blue + teal */
-    background: linear-gradient(135deg, rgba(0, 51, 102, 0.6), rgba(0, 204, 153, 0.6));
-    z-index: 0;
-    backdrop-filter: blur(6px); /* dagdag depth effect */
-  }
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      /* Soft purple–blue gradient overlay */
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.55), rgba(236, 72, 153, 0.55));
+      z-index: 0;
+      backdrop-filter: blur(8px);
+    }
 
-  #app {
-    position: relative;
-    z-index: 1;
-  }
-</style>
-
+    #app {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body
   class="min-h-screen flex items-center justify-center p-6 bg-cover bg-center relative"
   style="background-image: url('https://i.pinimg.com/originals/1f/bc/87/1fbc87e7d73c792eb7e4d5e27d1814e1.gif');">
- 
 
-  <div id="app" class="relative w-full max-w-2xl bg-white/80 rounded-3xl shadow-2xl p-10 backdrop-blur-lg border border-white/40">
-    
- 
-    <h1 class="text-4xl font-extrabold text-green-800 text-center tracking-wide drop-shadow-md mb-6">
-       Create New Student
-    </h1>
+  <div id="app" class="relative w-full max-w-2xl bg-white/70 rounded-3xl shadow-2xl p-10 backdrop-blur-xl border border-white/30">
+
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h1 class="text-5xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg tracking-wide animate-pulse">
+        Create New Student
+      </h1>
 
     <section>
       <form action="<?=site_url('students/create');?>" method="POST" class="space-y-5" novalidate>
