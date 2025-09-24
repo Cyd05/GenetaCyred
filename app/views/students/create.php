@@ -36,7 +36,7 @@
 <br>
     <section>
       <form action="<?=site_url('students/create');?>" method="POST" class="space-y-5" novalidate>
-        
+        <br>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
