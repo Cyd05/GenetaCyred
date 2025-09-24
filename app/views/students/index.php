@@ -7,41 +7,53 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'poppins': ['Poppins', 'sans-serif'],
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          'poppins': ['Poppins', 'sans-serif'],
+        },
+        colors: {
+          navy: {
+            light: '#1e293b',
+            DEFAULT: '#0f172a',
+            dark: '#020617',
           },
-          animation: {
-            'fade-in': 'fadeIn 0.8s ease-in-out',
-            'slide-up': 'slideUp 0.6s ease-out',
-            'float': 'float 6s ease-in-out infinite',
-            'glow': 'glow 2s ease-in-out infinite alternate',
+          neon: {
+            cyan: '#06b6d4',
+            blue: '#3b82f6',
           },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-            slideUp: {
-              '0%': { transform: 'translateY(30px)', opacity: '0' },
-              '100%': { transform: 'translateY(0)', opacity: '1' },
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-10px)' },
-            },
-            glow: {
-              '0%': { boxShadow: '0 0 5px rgba(59, 130, 246, 0.5), 0 0 10px rgba(59, 130, 246, 0.3)' },
-              '100%': { boxShadow: '0 0 15px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.5)' },
-            }
-          }
-        }
-      }
-    }
-  </script>
+        },
+        animation: {
+          'fade-in': 'fadeIn 0.9s ease-in-out',
+          'slide-up': 'slideUp 0.7s ease-out',
+          'float': 'float 6s ease-in-out infinite',
+          'pulse-glow': 'pulseGlow 2s ease-in-out infinite alternate',
+        },
+        keyframes: {
+          fadeIn: {
+            '0%': { opacity: '0', transform: 'translateY(20px)' },
+            '100%': { opacity: '1', transform: 'translateY(0)' },
+          },
+          slideUp: {
+            '0%': { transform: 'translateY(30px)', opacity: '0' },
+            '100%': { transform: 'translateY(0)', opacity: '1' },
+          },
+          float: {
+            '0%, 100%': { transform: 'translateY(0)' },
+            '50%': { transform: 'translateY(-8px)' },
+          },
+          pulseGlow: {
+            '0%': { boxShadow: '0 0 8px rgba(6, 182, 212, 0.5), 0 0 15px rgba(6, 182, 212, 0.3)' },
+            '100%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.9), 0 0 40px rgba(59, 130, 246, 0.6)' },
+          },
+        },
+      },
+    },
+  }
+</script>
+
  <style>
   body {
     background: radial-gradient(circle at top left, #0f172a, #020617 70%);
