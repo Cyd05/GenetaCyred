@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Create New Student</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background: rgba(42, 139, 42, 0.55); 
-      z-index: 0;
-    }
-    #app {
-      position: relative;
-      z-index: 1;
-    }
-  </style>
+ <style>
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    /* Gradient overlay na may dark blue + teal */
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.6), rgba(0, 204, 153, 0.6));
+    z-index: 0;
+    backdrop-filter: blur(6px); /* dagdag depth effect */
+  }
+
+  #app {
+    position: relative;
+    z-index: 1;
+  }
+</style>
+
 </head>
 <body
   class="min-h-screen flex items-center justify-center p-6 bg-cover bg-center relative"
