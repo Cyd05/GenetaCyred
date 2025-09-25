@@ -63,13 +63,7 @@ $database['main'] = array(
     'port'		=> '3306',
     'username'	=> 'sql12800002',
     'password'	=> 'Q7v9CMjR4c',
-    'database'	=> 'CREATE TABLE IF NOT EXISTS students (
-  id INT NOT NULL AUTO_INCREMENT,
-  last_name VARCHAR(50) NOT NULL,
-  first_name VARCHAR(50) NOT NULL,
-  email VARCHAR(50) NOT NULL,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;',
+    'database'	=> 'sql12800002',
     'charset'	=> 'utf8mb4',
     'dbprefix'	=> '',
     // Optional for SQLite
